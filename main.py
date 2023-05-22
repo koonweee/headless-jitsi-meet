@@ -9,7 +9,9 @@ chrome_options = webdriver.ChromeOptions()
 chrome_options.add_argument('use-fake-ui-for-media-stream')
 chrome_options.add_argument("--headless=new")
 
-driver = webdriver.Chrome(service=ChromeService(ChromeDriverManager().install()), options=chrome_options)
+# driver = webdriver.Chrome(service=ChromeService(ChromeDriverManager().install()), options=chrome_options)
+# for pi
+driver = webdriver.Chrome(options=chrome_options)
 driver.get(URL)
 print('running')
 
