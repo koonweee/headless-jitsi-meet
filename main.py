@@ -7,7 +7,7 @@ URL = 'https://meet.jit.si/MutualDecembersAverageCheaply#userInfo.displayName=%2
 
 chrome_options = webdriver.ChromeOptions()
 chrome_options.add_argument('use-fake-ui-for-media-stream')
-chrome_options.add_argument("--headless=new")
+# chrome_options.add_argument("--headless=new")
 
 # driver = webdriver.Chrome(service=ChromeService(ChromeDriverManager().install()), options=chrome_options)
 # for pi
