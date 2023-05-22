@@ -2,6 +2,7 @@ from selenium import webdriver
 from selenium.webdriver.chrome.service import Service as ChromeService
 from webdriver_manager.chrome import ChromeDriverManager
 
+# URL parameters added with https://shawnchin.github.io/jitsi-url-generator/
 URL = 'https://meet.jit.si/MutualDecembersAverageCheaply#userInfo.displayName=%22pi%22&config.prejoinConfig.enabled=false&config.startWithVideoMuted=true&config.faceLandmarks.enableFaceCentering=false&config.disableTileEnlargement=true&config.notifications=[]'
 
 chrome_options = webdriver.ChromeOptions()
