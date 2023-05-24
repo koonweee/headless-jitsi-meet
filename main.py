@@ -15,6 +15,7 @@ URL = 'https://meet.jit.si/MutualDecembersAverageCheaply#config.disableAP=true#u
 chrome_options = webdriver.ChromeOptions()
 chrome_options.add_argument('use-fake-ui-for-media-stream')
 chrome_options.add_argument('--disable-gpu')
+chrome_options.add_argument('--disable-features=AudioServiceSandbox')
 if headless:
     print('headless')
     chrome_options.add_argument("--headless=new")
