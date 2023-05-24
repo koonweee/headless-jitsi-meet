@@ -5,7 +5,7 @@ from webdriver_manager.chrome import ChromeDriverManager
 chrome_options = webdriver.ChromeOptions()
 chrome_options.add_argument('use-fake-ui-for-media-stream')
 chrome_options.add_argument('--disable-gpu')
-# chrome_options.add_argument("--headless=new")
+chrome_options.add_argument("--headless=new")
 driver = webdriver.Chrome(options=chrome_options)
 
 # additional URL parameters to optimize call
