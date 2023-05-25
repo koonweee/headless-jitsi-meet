@@ -2,6 +2,7 @@ from flask import Flask, request, render_template
 from jitsi_client import join_call, leave_call
 import RPi.GPIO as GPIO
 GPIO.setwarnings(False)
+GPIO.setmode(GPIO.BCM)
 GPIO.setup(12, GPIO.OUT) # LED connected to GPIO 12
 
 app = Flask(__name__)
