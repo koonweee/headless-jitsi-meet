@@ -1,0 +1,24 @@
+{% extends 'base.html' %}
+
+{% block content %}
+    <h1>PreSAGE 2-Way Communication Prototype</h1>
+    <style>
+        textarea {
+        width: 100%;
+        height: 30px;
+        box-sizing: border-box;
+        border: 2px solid #ccc;
+        border-radius: 4px;
+        background-color: #f8f8f8;
+        font-size: 16px;
+        resize: none;
+        }
+      </style>
+      <form action="/start-call" method="POST">
+        <textarea name="call_url" placeholder="Enter Jitsi Meet URl"></textarea>
+        <button type="submit" name="submit">Initiate call</button>
+      </form>
+      <form action="/end-call" method="POST">
+        <button type="submit" name="submit">End call</button>
+      </form>
+{% endblock %}
